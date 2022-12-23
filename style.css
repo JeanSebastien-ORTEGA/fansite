@@ -5,11 +5,15 @@ body{
     padding:0;
     box-sizing: border-box;
     font-family: 'Oswald';
+  
+  /* A Mettre dans une div du body pour interchanger les BG des pages */
+}
+
+#BG{
   height: 98vh;
   background-image: url(https://i.ibb.co/mhM5mF0/bg-index.jpg);
   background-repeat: no-repeat, repeat; 
   background-size: cover;
-  /* A Mettre dans une div du body pour interchanger les BG des pages */
 }
 
 .container {
