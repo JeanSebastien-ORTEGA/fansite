@@ -3,18 +3,33 @@ body{
     height: 120vh;
     margin: 0;
     padding:0;
-    box-sizing: border-box;
     font-family: 'Oswald';
-  
-  /* A Mettre dans une div du body pour interchanger les BG des pages */
 }
 
+/* All BG */
 #BG{
   height: 98vh;
   background-image: url(https://i.ibb.co/mhM5mF0/bg-index.jpg);
-  background-repeat: no-repeat, repeat; 
+  background-repeat: no-repeat; 
   background-size: cover;
 }
+#BG_galerie{
+  background-image: url(https://i.ibb.co/SJDBXg2/Fotoram-io-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#BG_event{
+  background-image: url(https://i.ibb.co/Y8hPXMg/MjAyMTA5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#BG_contact{
+  background-image: url(https://i.ibb.co/pf74sCW/Fotoram-io-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Fin BG */
 
 .container {
     width: 10%;
@@ -33,9 +48,6 @@ header {
   display: flex;
   justify-content: space-between;
   width:100%;
-  /* background-image: url(https://i.ibb.co/mhM5mF0/bg-index.jpg);
-  background-repeat: no-repeat, repeat; 
-  background-size: cover; */
 }
   
 .logo {
@@ -89,14 +101,6 @@ header {
 }
    
 
-
-
-
-
-
-
-
-
 /*corps du site*/
 
 .layoutbody {
@@ -106,9 +110,9 @@ header {
   text-align: center;
 }
 
-.layoutbody > * {
-  padding: 10px;
-  flex: 1 100%;
+.layoutbody > *{
+  padding: 50px;
+  flex: 1;
 }
 
 .article_main {
@@ -122,7 +126,80 @@ header {
   font-family: 'Oswald';
 }
 
+/*Galerie*/
 
+.container_galerie {
+  margin: 10rem auto;
+}
+
+.gallery {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container_galerie img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /*Event*/
+
+  .titres{
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .photo_gauche{
+    display: flex;
+    width: 40%;
+  }
+
+  #photogauche{
+    flex: 1;
+    width: 100%;
+    justify-content: left;
+    margin-top: 30%;
+  }
+ 
+  
+
+  /*Contact*/
+
+  form {
+    background-color: #ffffff;
+    width:350px;
+    text-align: center;
+    margin: 30px auto;
+    box-shadow: 4px 4px 5px #999999;
+    padding: 0 0 40px 0;
+    border-radius: 10px;
+  }
+  input{
+    margin: 20px 0px;
+    width: 300px;
+    border: none;
+    border-bottom: solid 1px rgb(221, 158, 22);
+    padding 4px 0 5px 0;
+    color: rgb(0, 0, 0);
+  }
+  button {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background-color:rgb(221, 158, 22);
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    margin: 15px 0 0 0
+  }
 
 
 /*Barre nav Footer*/
